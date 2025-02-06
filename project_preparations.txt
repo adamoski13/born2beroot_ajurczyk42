@@ -51,12 +51,12 @@ Phrases and names to be elaborated:
 		- Memory management: keep track of how much memory is used to store what and where.
 		- Process management: determine which processes can use the CPU, when and for how long.
 		- Device drivers: Act as mediator/interpreter between the hardware and processes.
-		- System calls and decutiry: receive request for service from the processes.
+		- System calls and security: receive request for service from the processes.
 2.	AppArmor
 	Debian 10 and onward have AppArmor by default.
 	AppArmor help in protection the system against known and unknown vulnerabilities.
 	AppArmor apply set of rules (profiles) that specify what files a given program can access.
-	In contrast to SELinux the rules applied do not depend on the user. All users face the same set of rules when they are execiting the same program.
+	In contrast to SELinux the rules applied do not depend on the user. All users face the same set of rules when they are executing the same program.
 	Profiles contain a list of access control rules on resources that each program can make use of.
 	Profiles are compiled and loaded into kernel by the 'apparmor_parser' command.
 	Command 'aa-status' will check if it is running.
@@ -80,7 +80,7 @@ Phrases and names to be elaborated:
 		- 'lvmchange' change attributes of the LVM
 		- 'lvmdiskscan' scan for all devices visible to LVM2
 		- 'lvmdump' creat lvm2 information dumps for diagnostic purposes
-		There is also a lot of commends for Physical Volumes (PV) and  Volume Groups (VG) but for this project we will focus on Logical Volumes (LV):
+		There is also a lot of commends for Physical Volumes (PV) and Volume Groups (VG) but for this project we will focus on Logical Volumes (LV):
 		- 'lvchange' change attributes of a LV
 		- 'lvconvert' converting a LV from linear to mirror snapshot.
 		- 'lvcreate' create a LV in existing Volume Groups.
@@ -100,8 +100,7 @@ Phrases and names to be elaborated:
 		- sshd_config: server configuration file
 	Port numbers are used to distinguish between different services that run over transport protocols.
 	Port numbers are assinged based o three ranges:
-		- System ports (0-1023). They are
-		Adding '-b' or '--boot' will print only last system boot used by system processes that provide widely used types of network services.
+		- System ports (0-1023). They are used by system processes that provide widely used types of network services.
 		- User ports (1024-49151). They are assigned by IANA (organization that oversees global IP address allocation). 
 		Port 4242 is assigned to DICOM server (digital storage and transmission of medical images) and/or 
 		Quassel (allows simultaneouns connections to multiple IRC servers).
@@ -113,14 +112,14 @@ Phrases and names to be elaborated:
 	'ufw allow ####' is used for setting up a rule.
 7.	Users, Groups
 	Linux uses groups as a way to organize users. They exist to make permissionig of files and folders simpler.
-	Linux was degigned to allow more than one user to have access to the system at the same time but with different permissions.
+	Linux was designed to allow more than one user to have access to the system at the same time but with different permissions.
 8.	Root
 	Name of the most powerful account. Also known as supervisor, superuser and administrator.
 	If debian uses SELinux root is just another account.
 	In terminal we can use 'su' to change our identity to root.
 9.	SUDO
 	Sudo = Superuser do
-	Sudo gives the degignated user a power to act as an administrator temporarily.
+	Sudo gives the designated user a power to act as an administrator temporarly.
 	Its give another user limited access to another user account for the purpose of performing tasks.
 	File "/etc/sudoers" contains rights given to users.
 10.	TTY
@@ -160,9 +159,9 @@ Phrases and names to be elaborated:
 		bootloader and boot manager for Linux and other Unix-based OSes
 15.	nano
 	is used to invoke the full command line text editor
-16. getent
+16.	getent
 	helps user to get entries in many important text files called databases
-17. cat
+17.	cat
 	create new file
 18.	Scripts in bash, Wall, Banner, Cron. Interraption of running script
 	- 'uname' Show information about our system. 
@@ -175,7 +174,7 @@ Phrases and names to be elaborated:
 		Adding '-p' will show type of our processor.
 		Adding '-i' will show name of hardware platform.
 		Adding '-o' will show name of our system.
-	- 'grep' is a tool for filter text files, multiple fire names, finding lines in files/folders. 
+	- 'grep' is a tool for filter text files, multiple file names, finding lines in files/folders. 
 		Basic syntex looks as follows: grep [OPTIONS] pattern [FILE], where:
 		+ grep - the utility name
 		+ options - arguments that modify the grep command's behavior
@@ -237,7 +236,7 @@ Phrases and names to be elaborated:
 		First parameter makes the values measured and delivered every x seconds
 		Second parameter make the values will be delivered x times, then the program will be terminated
 	- 'tail' Prints the last N numbers of data of the given input.
-		Basic syntax looks as follows: tail OPTION FILE where:
+		Basic syntax looks as follows: tail OPTION FILE, where:
 		+ tail - the utility name
 		+ OPTION - arguments that modify the tail command's behavior
 			* '-x' where x is a number. Prints last x lines
