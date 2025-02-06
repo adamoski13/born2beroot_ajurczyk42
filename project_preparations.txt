@@ -274,5 +274,3 @@ Phrases and names to be elaborated:
 	- 'wall' Writes a message on the terminal of all currently logged-in users
 19.	CRON
 		Allows to plan script execution in specific time intervals.
-
-BONUS PART
