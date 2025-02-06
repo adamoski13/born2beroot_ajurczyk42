@@ -100,7 +100,8 @@ Phrases and names to be elaborated:
 		- sshd_config: server configuration file
 	Port numbers are used to distinguish between different services that run over transport protocols.
 	Port numbers are assinged based o three ranges:
-		- System ports (0-1023). They are used by system processes that provide widely used types of network services.
+		- System ports (0-1023). They are
+		Adding '-b' or '--boot' will print only last system boot used by system processes that provide widely used types of network services.
 		- User ports (1024-49151). They are assigned by IANA (organization that oversees global IP address allocation). 
 		Port 4242 is assigned to DICOM server (digital storage and transmission of medical images) and/or 
 		Quassel (allows simultaneouns connections to multiple IRC servers).
@@ -273,3 +274,5 @@ Phrases and names to be elaborated:
 	- 'wall' Writes a message on the terminal of all currently logged-in users
 19.	CRON
 		Allows to plan script execution in specific time intervals.
+
+BONUS PART
