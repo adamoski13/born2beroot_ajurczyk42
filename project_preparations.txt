@@ -91,9 +91,9 @@ MANDATORY PART
 			We can change lines that starts with "PASS_MAX_DAYS", "PASS_MIN_DAYS" and "PASS_WARN_AGE"
 			But it is default that system send warning 7 days before so we dont need to change that.
 		The changes arent automatically applied to existiong users so we use:
-			'sudo change -M 30 <username/root>'
-			'sudo change -m 2 <username/root>'
-			'sudo change -W 7 <username/root>'
+			'sudo chage -M 30 <username/root>'
+			'sudo chage -m 2 <username/root>'
+			'sudo chage -W 7 <username/root>'
 	- password must be at last 10 characters long, with uppercase and lowercase letter, and aslo a number.
 	- password can't have more than 3 consecutive identical characters,
 	- password can't contain name of the user,
