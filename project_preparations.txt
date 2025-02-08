@@ -42,7 +42,7 @@ MANDATORY PART
 		If we already have this user system will tell us.
 	And user with my username must be in 'user42' and 'sudo' groups.
 		To create new group we use:
-			'sudo add group <name of group>'
+			'sudo addgroup <name of group>'
 		To check on created group we can put:
 			'getent group <name of group>'
 		To add user to group we put:
