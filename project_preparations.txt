@@ -83,20 +83,12 @@ MANDATORY PART
 		We name host during instalation.
 9.	Strong password policy must be implemented.
 	- password has to expire every 30 days,
-		We can change that in file login.defs by:
-			'su'
-			'nano /etc/logic.defs
-			We can change lines that starts with "PASS_MAX_DAYS"
 	- password can't be changed until 2 days before its expiration,
-		We can change that in file login.defs by:
-			'su'
-			'nano /etc/logic.defs
-			We can change lines that starts with "PASS_MIN_DAYS"
 	- user has to receive warning massage 7 days before password expiration,
 		We can change that in file login.defs by:
 			'su'
 			'nano /etc/logic.defs
-			We can change lines that starts with "PASS_WARN_AGE"
+			We can change lines that starts with "PASS_MAX_DAYS", "PASS_MIN_DAYS" and "PASS_WARN_AGE"
 			But it is default that system send warning 7 days before so we dont need to change that.
 		The changes arent automatically applied to existiong users so we use:
 			'sudo change -M 30 <username/root>'
