@@ -374,4 +374,4 @@ Phrases and names to be elaborated:
 			Add command at the end:
 			'*/10 * * * * sh /home/<user>/monitoring.sh'
 			Script will execute every 10 minutes.
-		All combinations for cron we can fild by 'man 5 crontab'.
+		All combinations for cron we can find by 'man 5 crontab'.
