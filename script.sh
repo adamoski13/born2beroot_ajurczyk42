@@ -15,9 +15,9 @@ tot_mem=$(free --mega | awk '$1 == "Mem:" {print $2}')
 mem_per=$(free --mega | awk '$1 == "Mem:" {printf("%.2f"), $3/$2*100}')
 
 # current available storage on serwer and its utilization rate as percentage
-diskuse=$(df -h --total | grep "/dev/" | grep -v "/boot" | awk '{disk_t += $2} END {printf ("%.1fGb"), disk_t/1024}')
-tot_disk=$(df -h --total | grep "/dev/" | grep -v "/boot" | awk '{disk_u += $3} END {print disk_u}')
-disk_per=$(df -h --total | grep "/dev/" | grep -v "/boot" | awk '{disk_u += $3} {disk_t += $2} END {printf("%d"), disk_u/disk_t*100}')
+diskuse=$(df -h | grep "/dev/" | grep -v "/boot" | awk '{disk_t += $2} END {printf ("%.1fGb"), disk_t/1024}')
+tot_disk=$(df -h | grep "/dev/" | grep -v "/boot" | awk '{disk_u += $3} END {print disk_u}')
+disk_per=$(df -h | grep "/dev/" | grep -v "/boot" | awk '{disk_u += $3} {disk_t += $2} END {printf("%d"), disk_u/disk_t*100}')
 
 # current utilization rate of processors as a percentage
 cpu_var1=$(vmstat 1 2 | tail -1 | awk '{printf $15}')
